@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: devops9.azurecr.io/loan-calculator
   pullPolicy: Always 
-  tag: 1.0.0-RELEASE
+  tag: 
 
 service:
   name: loan-calculator
