@@ -7,11 +7,9 @@ pipeline {
      
         environment {
 		
-		           chart = 'loan-calculator'
-		           KUBECONFIG= '/var/lib/jenkins/kubernetes/AKS-CLUSTER-1/config'
+	    chart = 'loan-calculator'
+            KUBECONFIG= '/var/lib/jenkins/kubernetes/AKS-CLUSTER-1/config'
 		
-		
-        dockerImage = ''
     }
     
     stages {
