@@ -15,6 +15,10 @@ spec:
       labels:
         app: {{ .Values.metadata.name }}
     spec:
+      securityContext:
+         runAsNonRoot: true
+         runAsUser: 5936 
+         runAsGroup: 5936 
       containers:
         - name: {{ .Values.container.name }}
           image: "{{ .Values.image.repository}}:{{ .Values.image.tag}}"
