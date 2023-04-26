@@ -17,6 +17,7 @@ elif [ "$ACTION" = "uninstall" ]; then
      if [ "$STATUS" = "deployed" ]; then
           echo -e "\nHelm chart $CHART is installed\n "
           echo -e "\nUninstalling $CHART\n"
+          helm uninstall $CHART
        else
           echo -e "\nHelm chart $CHART is not installed \n"
        fi
